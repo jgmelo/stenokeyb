@@ -626,7 +626,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "outputs-to-fab/",
       "specctra_dsn": "route-02.dsn",
       "step": "",
       "vrml": ""

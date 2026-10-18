@@ -90,7 +90,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -123,9 +122,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "outputs-to-fab/")
 		)
 	)
 	(footprint "Diode_SMD:D_SOD-123"
@@ -1556,12 +1555,12 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "keyboard-parts-global:STM32BluePill_2x20_P2.54mm"
+	(footprint "keyboard-parts-global:STM32BluePill_2x20_P2.54mm_socketed"
 		(layer "F.Cu")
 		(uuid "1a3a4788-504a-4672-81da-51587e94454b")
 		(at 138 116.5)
 		(property "Reference" "STM32 Blue Pill"
-			(at -2.5 22.5 90)
+			(at -3 25.5 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "445d45db-38a5-45a3-b0ae-4790ee087242")
@@ -1572,7 +1571,7 @@
 				)
 			)
 		)
-		(property "Value" "STM32BluePill_2x20_P2.54mm"
+		(property "Value" "STM32BluePill_2x20_P2.54mm_socketed"
 			(at 0 -5.5 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1624,8 +1623,19 @@
 			(uuid "b4bc934c-ae96-4bd6-a11c-2858d19755c3")
 		)
 		(fp_rect
-			(start -4.75 -3.25)
-			(end 20 51.5)
+			(start -1.5 -1.54)
+			(end 1.5 49.8)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "7434bc84-1804-441e-b571-76e9241de563")
+		)
+		(fp_rect
+			(start 13.74 -1.54)
+			(end 16.74 49.8)
 			(stroke
 				(width 0.05)
 				(type default)
@@ -1635,7 +1645,7 @@
 			(uuid "6dae6f01-c7f3-488f-89d6-c2b84f318d90")
 		)
 		(fp_text user "USB"
-			(at 6 -1 0)
+			(at 6 0 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "05372706-f5e6-4df3-a94a-0cfd7e8cde37")
@@ -18672,22 +18682,6 @@
 		(uuid "cb8f983b-8e75-42c4-87ae-bb131fe702b8")
 	)
 	(segment
-		(start 147.73 136)
-		(end 147.73 130.3175)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "LED_RED_A")
-		(uuid "5d089411-950d-44e3-9a9f-f29ced99c085")
-	)
-	(segment
-		(start 147.73 130.3175)
-		(end 146.9125 129.5)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "LED_RED_A")
-		(uuid "79bb8601-ffb6-45ce-b19a-2eeddad85fa7")
-	)
-	(segment
 		(start 142.5 154)
 		(end 149 154)
 		(width 0.25)
@@ -18950,6 +18944,22 @@
 		(layer "B.Cu")
 		(net "ts_top")
 		(uuid "a1a9a6c0-3985-4bc4-ba36-55fd11fb247b")
+	)
+	(segment
+		(start 147.73 136)
+		(end 147.73 130.3175)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "LED_RED_A")
+		(uuid "5d089411-950d-44e3-9a9f-f29ced99c085")
+	)
+	(segment
+		(start 147.73 130.3175)
+		(end 146.9125 129.5)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "LED_RED_A")
+		(uuid "79bb8601-ffb6-45ce-b19a-2eeddad85fa7")
 	)
 	(embedded_fonts no)
 )
